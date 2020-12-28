@@ -16,9 +16,12 @@ function Footer() {
 								<input
 									className='footer__email-input'
 									type='email'
+									name='user_email'
 									placeholder='Введите ваш e-mail:'
 								/>
-								<button className='footer__email-submit-btn'>
+								<button
+									className='footer__email-submit-btn'
+									type='submit'>
 									Отправить
 								</button>
 							</div>
