@@ -27,7 +27,12 @@ function HeaderTop() {
 					</ul>
 
 					<Link className='logo__link' to='/home'>
-						<img src='img/logo-img.png' alt='Site logo' />
+						<img
+							src='img/logo-img.png'
+							alt='Site logo'
+							width='100'
+							height='50'
+						/>
 					</Link>
 
 					<div className='header-top__right'>
@@ -36,15 +41,30 @@ function HeaderTop() {
 						</address>
 						<div className='header-top__btns'>
 							<Link className='header-top__btn liked-btn' to='/liked'>
-								<img src='img/like.svg' alt='Like icon' />
+								<img
+									src='img/like.svg'
+									alt='Like icon'
+									width='25'
+									height='25'
+								/>
 							</Link>
 							<Link className='header-top__btn profile-btn' to='/login'>
-								<img src='img/profile.svg' alt='Profile icon' />
+								<img
+									src='img/profile.svg'
+									alt='Profile icon'
+									width='25'
+									height='25'
+								/>
 							</Link>
 							<Link
 								className='header-top__btn korzinka-btn'
 								to='/selected'>
-								<img src='img/korzinka.svg' alt='korzinka icon' />
+								<img
+									src='img/korzinka.svg'
+									alt='korzinka icon'
+									width='25'
+									height='25'
+								/>
 							</Link>
 						</div>
 					</div>

@@ -23,8 +23,6 @@ html {
 
 body {
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	font-family: 'Arial', 'sans-serif';
@@ -32,7 +30,11 @@ body {
 	line-height: 1.5;
 	color: #48494d;
 }
-
+#root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
 img {
 	max-width: 100%;
 	height: auto;
