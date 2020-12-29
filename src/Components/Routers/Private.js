@@ -1,10 +1,12 @@
 import { Route, Redirect } from 'react-router-dom';
-import useToken from '../../Hooks/useToken.js';
+import useEmail from '../../Hooks/useEmail.js';
+import useName from '../../Hooks/useName.js';
 
 function Private({ children, ...props }) {
-	const [token] = useToken();
+	const [email] = useEmail();
+	const [name] = useName();
 
-	if (!token) {
+	if (!email && !name) {
 		return <Redirect to='/login' />;
 	}
 

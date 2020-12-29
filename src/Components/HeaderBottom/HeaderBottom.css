@@ -53,3 +53,7 @@
 	text-decoration: none;
 	transition: color 0.8s ease;
 }
+
+.active_nav {
+	color: #ff7931;
+}

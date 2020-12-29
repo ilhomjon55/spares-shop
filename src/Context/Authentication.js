@@ -3,18 +3,33 @@ import { createContext, useState, useEffect } from 'react';
 const Context = createContext(null);
 
 const Provider = ({ children }) => {
-	const [state, setState] = useState(window.localStorage.getItem('token'));
+	const [stateEmail, setStateEmail] = useState(
+		window.localStorage.getItem('email')
+	);
+
+	const [stateName, setStateName] = useState(
+		window.localStorage.getItem('name')
+	);
 
 	useEffect(() => {
-		if (state) {
-			window.localStorage.setItem('token', state);
+		if (stateEmail) {
+			window.localStorage.setItem('email', stateEmail);
 		} else {
-			window.localStorage.removeItem('token');
+			window.localStorage.removeItem('email');
 		}
-	}, [state]);
+	}, [stateEmail]);
+
+	useEffect(() => {
+		if (stateName) {
+			window.localStorage.setItem('name', stateName);
+		} else {
+			window.localStorage.removeItem('name');
+		}
+	}, [stateName]);
 
 	return (
-		<Context.Provider value={{ state, setState }}>
+		<Context.Provider
+			value={{ stateEmail, setStateEmail, stateName, setStateName }}>
 			{children}
 		</Context.Provider>
 	);

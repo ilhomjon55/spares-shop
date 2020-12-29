@@ -1,12 +1,14 @@
 import { Route, Redirect, useLocation } from 'react-router-dom';
-import useToken from '../../Hooks/useToken.js';
+import useEmail from '../../Hooks/useEmail.js';
+import useName from '../../Hooks/useName.js';
 
 function Public({ children, ...props }) {
 	const { pathName } = useLocation;
 
-	const [token] = useToken();
+	const [email] = useEmail();
+	const [name] = useName();
 
-	if (token && pathName === '/login') {
+	if (email && name && pathName === '/login') {
 		return <Redirect to='/' />;
 	}
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './HeaderBottom.css';
 
 function HeaderBottom() {
@@ -9,44 +9,68 @@ function HeaderBottom() {
 					<nav className='site__nav'>
 						<ul className='nav__list'>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/catalog'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/catalog'>
 									Каталог запчастей
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/catalogto'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/catalogto'>
 									Каталог ТО
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/spares'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/spares'>
 									Шины
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/disks'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/disks'>
 									Диски
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/batteries'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/batteries'>
 									Аккумуляторы
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/autooil'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/autooil'>
 									Автомасла
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/autolamps'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/autolamps'>
 									Автолампы
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav__item'>
-								<Link className='nav__link' to='/accessories'>
+								<NavLink
+									className='nav__link'
+									activeClassName='active_nav'
+									to='/accessories'>
 									Аксессуары
-								</Link>
+								</NavLink>
 							</li>
 						</ul>
 					</nav>
