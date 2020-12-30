@@ -1,5 +1,9 @@
 function Spares() {
-	return <>Spares</>;
+	return (
+		<>
+			<div className='container'>Hello</div>
+		</>
+	);
 }
 
 export default Spares;

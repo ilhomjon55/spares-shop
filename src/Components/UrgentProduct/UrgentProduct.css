@@ -1,0 +1,117 @@
+.urgent-item__wrapper {
+   position: relative;
+   width: 100%;
+   max-width: 250px;
+   padding: 0;
+   border: 1px solid #CDCDCD;
+   box-sizing: border-box;
+   border-radius: 3px;
+}
+
+.urgent-item__wrapper::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 25px;
+   height: 80px;
+   background-image: url(./discount-lenta.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   border-radius: 3px;
+   translate: rotate(180);
+   content: '';
+}
+
+.urgent-item__price-box {
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   border-radius: 3px;
+   background-color: #fff;
+}
+
+.urgent-item__price--new {
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 37px;
+   text-align: right;
+   color: #FF7931;
+}
+
+.urgent-item__price--new>span {
+   font-weight: normal;
+}
+
+.urgent-item__price--old {
+   font-size: 20px;
+   line-height: 23px;
+   text-align: right;
+   color: #A8A8A8;
+   text-decoration: line-through;
+
+}
+
+.ugent-item__top {
+   padding: 20px 0;
+}
+
+.urgent-item__img {
+   margin-bottom: 10px;
+}
+
+.urgent-item__heading {
+   margin: 0;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 20px;
+   text-align: center;
+   color: #48494D;
+}
+
+.ugent-item__desc {
+   padding: 20px;
+   text-align: center;
+
+}
+
+.urgent-item__interval-title {
+   font-size: 16px;
+   line-height: 18px;
+   text-align: center;
+   color: #48494D;
+}
+
+.ugent-item__desc {
+   background-color: #F0F0F4;
+
+}
+
+.ugent-item__desc-inner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.urgent-item__timer-icon {
+   flex-shrink: 0;
+   margin-right: 15px
+}
+
+.urgent-item__timer-num {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 20px;
+   margin-bottom: 0;
+}
+
+.urgent-item__timer-text {
+   margin-bottom: 0;
+   font-weight: bold;
+   font-size: 11px;
+   line-height: 11px;
+   color: #C4C4C4;
+}
