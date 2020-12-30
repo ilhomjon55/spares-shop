@@ -22,7 +22,7 @@ function Login() {
 					spellCheck='false'>
 					<h2 className='login__heading'>Log In</h2>
 
-					<div className='login__input-box form-group'>
+					<div className='login__input-box m-4'>
 						<label className='login__input-label' htmlFor='login_email'>
 							Your Email:
 						</label>
@@ -34,11 +34,11 @@ function Login() {
 							id='login_email'
 							placeholder='Email ...'
 							pattern='^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$'
-							required
+							required='true'
 						/>
 					</div>
 
-					<div className='login__input-box form-group'>
+					<div className='login__input-box m-4'>
 						<label
 							className='login__input-label'
 							htmlFor='login_username'>
@@ -52,7 +52,7 @@ function Login() {
 							id='login_username'
 							placeholder='Name ...'
 							minLength='2'
-							required
+							required='true'
 						/>
 					</div>
 
