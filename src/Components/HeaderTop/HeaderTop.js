@@ -26,7 +26,7 @@ function HeaderTop() {
 						</li>
 					</ul>
 
-					<Link className='logo__link' to='/home'>
+					<Link className='logo__link' to='/'>
 						<img
 							src='img/logo-img.png'
 							alt='Site logo'
@@ -36,24 +36,34 @@ function HeaderTop() {
 					</Link>
 
 					<div className='header-top__right'>
-						<address className='header-top__location'>
-							Санкт-Петербург, ул Большая Конюшенная, д 19
-						</address>
+						<div className='header-top__location-wrapper'>
+							<img
+								className='header-top__location-img'
+								src='img/location.svg'
+								alt='Location icon'
+								width='20'
+								height='20'
+							/>
+							<address className='header-top__location'>
+								Санкт-Петербург, ул Большая Конюшенная, д 19
+							</address>
+						</div>
+
 						<div className='header-top__btns'>
 							<Link className='header-top__btn liked-btn' to='/liked'>
 								<img
 									src='img/like.svg'
 									alt='Like icon'
-									width='25'
-									height='25'
+									width='20'
+									height='20'
 								/>
 							</Link>
 							<Link className='header-top__btn profile-btn' to='/login'>
 								<img
 									src='img/profile.svg'
 									alt='Profile icon'
-									width='25'
-									height='25'
+									width='20'
+									height='20'
 								/>
 							</Link>
 							<Link
@@ -62,8 +72,8 @@ function HeaderTop() {
 								<img
 									src='img/korzinka.svg'
 									alt='korzinka icon'
-									width='25'
-									height='25'
+									width='20'
+									height='20'
 								/>
 							</Link>
 						</div>

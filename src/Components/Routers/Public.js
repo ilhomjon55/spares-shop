@@ -3,12 +3,12 @@ import useEmail from '../../Hooks/useEmail.js';
 import useName from '../../Hooks/useName.js';
 
 function Public({ children, ...props }) {
-	const { pathName } = useLocation;
+	const { pathname } = useLocation();
 
 	const [email] = useEmail();
 	const [name] = useName();
 
-	if (email && name && pathName === '/login') {
+	if (email && name && pathname === '/login') {
 		return <Redirect to='/' />;
 	}
 

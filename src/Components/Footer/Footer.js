@@ -7,7 +7,11 @@ function Footer() {
 			<footer className='site-footer'>
 				<div className='container'>
 					<div className='site-footer__inner'>
-						<form className='footer__email-form' method='POST'>
+						<form
+							className='footer__email-form'
+							method='POST'
+							autoComplete='off'
+							spellCheck='false'>
 							<h2 className='footer__email-heading'>
 								Подпишитесь на нашу рассылку и узнавайте об акция
 								быстрее
@@ -18,6 +22,8 @@ function Footer() {
 									type='email'
 									name='user_email'
 									placeholder='Введите ваш e-mail:'
+									pattern='^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$'
+									required
 								/>
 								<button
 									className='footer__email-submit-btn'

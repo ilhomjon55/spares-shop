@@ -1,83 +1,96 @@
 .header-top {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-top .container {
-	display: flex;
-	align-items: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 0 auto;
+   display: flex;
+   align-items: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin: 0 auto;
 }
 
 .header-top__left-list {
-	width: 100%;
-	max-width: 520px;
-	display: flex;
-	align-items: center;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
-	list-style-type: none;
+   width: 100%;
+   max-width: 520px;
+   display: flex;
+   align-items: center;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 0;
+   list-style-type: none;
 }
 
-.header-top__left-item + .header-top__left-item {
-	margin-left: 50px;
+.header-top__left-item+.header-top__left-item {
+   margin-left: 50px;
 }
 
 .header-top__left-link {
-	display: inline-block;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 23px;
-	color: #48494d;
-	text-decoration: none;
+   display: inline-block;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   color: #48494d;
+   text-decoration: none;
 }
 
 .header-top__left-link:hover {
-	opacity: 0.7;
+   opacity: 0.7;
 }
 
 .logo__link {
-	flex-shrink: 0;
-	margin-right: 50px;
-	margin-left: 50px;
+   flex-shrink: 0;
+   margin-right: 50px;
+   margin-left: 50px;
 }
 
 .logo__link:hover {
-	opacity: 0.7;
+   opacity: 0.7;
 }
 
 .header-top__right {
-	width: 100%;
-	max-width: 520px;
-	display: flex;
+   width: 100%;
+   max-width: 520px;
+   display: flex;
+}
+
+.header-top__location-wrapper {
+   display: flex;
+   align-items: flex-start;
+}
+
+.header-top__location-img {
+   flex-shrink: 0;
+   margin-right: 10px;
 }
 
 .header-top__location {
-	width: 100%;
-	max-width: 280px;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 23px;
-	color: #48494d;
+   width: 100%;
+   max-width: 280px;
+   margin-bottom: 0;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   color: #48494d;
 }
 
+
 .header-top__btns {
-	display: flex;
-	align-items: center;
-	margin-left: 37px;
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
 }
 
 .header-top__btn {
-	background: transparent;
-	border: none;
+   flex-shrink: 0;
+   background: transparent;
+   border: none;
 }
 
 .header-top__btn:hover {
-	opacity: 0.7;
+   opacity: 0.7;
 }
 
-.header-top__btn + .header-top__btn {
-	margin-left: 16px;
+.header-top__btn+.header-top__btn {
+   margin-left: 20px;
 }

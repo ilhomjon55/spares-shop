@@ -1,18 +1,31 @@
 .login__form {
-	padding: 5px;
+   width: 40%;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
 }
 
 .login__wrapper {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #cccccc;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #cccccc;
 }
-.d-none {
-	display: none;
+
+.login__heading {
+   margin-top: 0;
+   text-align: center;
+}
+
+.login__input-label {
+   margin-bottom: 10px;
+}
+
+.login__input::placeholder {
+   font-size: 16px;
 }
