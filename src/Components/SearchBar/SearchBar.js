@@ -9,7 +9,9 @@ function SearchBar() {
 
 	const searchQuery = new RegExp(inputSearch, 'gi');
 
-	const handleSearchBtnSubmit = () => {
+	const handleSearchBtnSubmit = (evt) => {
+		evt.preventDefault();
+
 		setFilteredProducts(
 			products.filter((product) => {
 				let condition;

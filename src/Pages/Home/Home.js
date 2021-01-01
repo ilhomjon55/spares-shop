@@ -2,6 +2,7 @@ import './Home.css';
 import SliderLg from '../../Components/SliderLg/SliderLg.js';
 import UrgentProduct from '../../Components/UrgentProduct/UrgentProduct.js';
 import SearchBar from '../../Components/SearchBar/SearchBar.js';
+import Categories from '../../Components/Categories/Categories.js';
 
 function Home() {
 	return (
@@ -12,9 +13,16 @@ function Home() {
 					<UrgentProduct />
 				</div>
 			</section>
+
 			<section className='search-product'>
 				<div className='container'>
 					<SearchBar />
+				</div>
+			</section>
+
+			<section className='categories'>
+				<div className='container'>
+					<Categories />
 				</div>
 			</section>
 		</>
