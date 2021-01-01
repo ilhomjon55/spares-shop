@@ -1,0 +1,60 @@
+.search__btns-wrapper {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.search__btn {
+	padding: 10px 20px;
+	font-size: 20px;
+	line-height: 23px;
+	color: #222222;
+	background-color: transparent;
+	border: none;
+}
+
+.search__btn + .search__btn {
+	margin-left: 50px;
+}
+
+.search__btn--active {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: #48494d;
+	background: #f0f0f4;
+	border-radius: 5px;
+}
+
+.search__form {
+	display: flex;
+}
+
+.search__form-input {
+	flex-grow: 1;
+	padding: 15px 20px;
+	background: #f0f0f4;
+	border: none;
+	border-radius: 3px 0 0 3px;
+}
+
+.search__form-input:focus {
+	outline: none;
+	opacity: 0.8;
+}
+
+.search__submit-btn {
+	padding: 15px 35px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: #ff7931;
+	border: none;
+	border-radius: 3px;
+}
+
+.search__products-list {
+	margin-bottom: 80px;
+}

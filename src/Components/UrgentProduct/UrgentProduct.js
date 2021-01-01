@@ -29,7 +29,9 @@ function UrgentProduct() {
 		<>
 			{urgentItem.map((item) => {
 				return (
-					<div className='urgent-item__wrapper flex-shrink-0'>
+					<div
+						className='urgent-item__wrapper flex-shrink-0'
+						key={item.id}>
 						<div className='urgent-item__price-box'>
 							<span className='urgent-item__price--new'>
 								{item.newCost} <span>{item.currency}</span>
