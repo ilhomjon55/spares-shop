@@ -1,0 +1,31 @@
+.products__slider-wrapper {
+   margin-bottom: 80px;
+}
+
+.tns-outer {
+   position: relative;
+}
+
+.tns-controls button {
+   position: absolute;
+   z-index: 10;
+   top: 50%;
+   display: inline-block;
+   transform: translateY(-50%);
+   padding: 10px;
+   color: #BDBDBD;
+   border: none;
+   border-radius: 30%;
+}
+
+.tns-controls button:hover {
+   color: #48494D;
+}
+
+.tns-controls button:nth-child(1) {
+   right: 103%;
+}
+
+.tns-controls button:nth-child(2) {
+   left: 103%;
+}

@@ -27,20 +27,16 @@ function SearchBar() {
 
 	const handleClickSearchBtn = (evt) => {
 		setSearchBy(evt.target.value);
-		if (searchBy === evt.target.value) {
-			evt.target.classList.add('search__btn--active');
-		} else {
-			evt.target.classList.remove('search__btn--active');
-		}
 	};
 
 	return (
 		<>
-			<div className='search__btns-wrapper'>
+			<div className='search__btns-wrapper nav'>
 				<button
-					className='search__btn search__btn--active'
+					className='search__btn active'
 					type='button'
 					value='producer'
+					data-bs-toggle='pill'
 					onClick={handleClickSearchBtn}>
 					Поиск по марке
 				</button>
@@ -48,6 +44,7 @@ function SearchBar() {
 					className='search__btn'
 					type='button'
 					value='title'
+					data-bs-toggle='pill'
 					onClick={handleClickSearchBtn}>
 					Поиск по названию товара
 				</button>

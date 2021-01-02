@@ -3,6 +3,7 @@ import SliderLg from '../../Components/SliderLg/SliderLg.js';
 import UrgentProduct from '../../Components/UrgentProduct/UrgentProduct.js';
 import SearchBar from '../../Components/SearchBar/SearchBar.js';
 import Categories from '../../Components/Categories/Categories.js';
+import Populars from '../../Components/Populars/Populars.js';
 
 function Home() {
 	return (
@@ -23,6 +24,12 @@ function Home() {
 			<section className='categories'>
 				<div className='container'>
 					<Categories />
+				</div>
+			</section>
+
+			<section className='populars'>
+				<div className='container'>
+					<Populars />
 				</div>
 			</section>
 		</>

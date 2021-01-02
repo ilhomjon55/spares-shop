@@ -1,0 +1,47 @@
+.populars__heading {
+   margin-bottom: 15px;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 29px;
+}
+
+.populars__nav-list {
+   display: flex;
+   margin-bottom: 25px;
+}
+
+.populars__nav-item+.populars__nav-item {
+   margin-left: 20px;
+}
+
+.populars__nav-link {
+   position: relative;
+   padding: 10px 0;
+   font-size: 15px;
+   line-height: 17px;
+   color: #48494D;
+   text-decoration: none;
+}
+
+.populars__nav-link:hover,
+.populars__nav-link.active {
+   font-weight: bold;
+   color: #48494D;
+}
+
+.populars__nav-link::after {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: #ff7931;
+   opacity: 0;
+   content: '';
+   transition: opacity 0.3s ease;
+}
+
+.populars__nav-link:hover::after,
+.populars__nav-link.active::after {
+   opacity: 1;
+}
